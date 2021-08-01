@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAF7"
+    tools:context=".TripDetailBlankFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/GrayCloseButtton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/exitbuttongray"
+            app:layout_constraintBottom_toTopOf="@+id/guideline9"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/NearbyImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nearbyimage"
+            app:layout_constraintDimensionRatio="0.772727"
+            app:layout_constraintEnd_toEndOf="@+id/ClockImage"
+            app:layout_constraintStart_toStartOf="@+id/ClockImage"
+            app:layout_constraintTop_toTopOf="@+id/guideline9" />
+
+        <ImageView
+            android:id="@+id/ClockImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clockimage"
+            app:layout_constraintBottom_toTopOf="@+id/CoinImage"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintEnd_toEndOf="@+id/CoinImage"
+            app:layout_constraintStart_toStartOf="@+id/CoinImage"
+            app:layout_constraintTop_toBottomOf="@+id/NearbyImage" />
+
+        <ImageView
+            android:id="@+id/CoinImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/coinimage"
+            app:layout_constraintBottom_toTopOf="@+id/guideline12"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11" />
+
+        <TextView
+            android:id="@+id/MasafatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Km"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toBottomOf="@+id/MasafatNameText"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/MasafatNameText" />
+
+        <TextView
+            android:id="@+id/MasafatNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مسافت طی شده"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toBottomOf="@+id/NearbyImage"
+            app:layout_constraintEnd_toEndOf="@+id/ModatZamanNameText"
+            app:layout_constraintTop_toTopOf="@+id/NearbyImage" />
+
+        <TextView
+            android:id="@+id/ModatZamanNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مدت زمان طی شده"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toBottomOf="@+id/ClockImage"
+            app:layout_constraintEnd_toEndOf="@+id/HazineNameText"
+            app:layout_constraintTop_toTopOf="@+id/ClockImage" />
+
+        <TextView
+            android:id="@+id/HazineNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="هزینه"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toBottomOf="@+id/CoinImage"
+            app:layout_constraintEnd_toStartOf="@+id/CoinImage"
+            app:layout_constraintTop_toTopOf="@+id/CoinImage" />
+
+        <TextView
+            android:id="@+id/PriceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0T"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toBottomOf="@+id/HazineNameText"
+            app:layout_constraintStart_toStartOf="@+id/TimeText"
+            app:layout_constraintTop_toTopOf="@+id/HazineNameText" />
+
+        <TextView
+            android:id="@+id/TimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00"
+            android:textColor="#212121"
+            app:layout_constraintBottom_toBottomOf="@+id/ModatZamanNameText"
+            app:layout_constraintStart_toStartOf="@+id/MasafatText"
+            app:layout_constraintTop_toTopOf="@+id/ModatZamanNameText" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="42dp"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="0dp"
+            app:layout_constraintGuide_percent="0.18" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="0dp"
+            app:layout_constraintGuide_percent="0.79" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="0dp"
+            app:layout_constraintGuide_percent="0.8" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAF7"
+    tools:context=".ScooterDetailBlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/GrayExitbutton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/exitbuttongray"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/StartButton"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/startbutton"
+            app:layout_constraintBottom_toBottomOf="@+id/m365Image"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/m365Image" />
+
+        <ImageView
+            android:id="@+id/m365Image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginLeft="34dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/m365scooterimage"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintDimensionRatio="1.2323"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <ImageView
+            android:id="@+id/NearbyImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nearbyimage"
+            app:layout_constraintBottom_toTopOf="@+id/ClockImage"
+            app:layout_constraintDimensionRatio="0.7727"
+            app:layout_constraintEnd_toEndOf="@+id/ClockImage"
+            app:layout_constraintStart_toStartOf="@+id/ClockImage"
+            app:layout_constraintTop_toBottomOf="@+id/BatteryImage" />
+
+        <ImageView
+            android:id="@+id/ClockImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clockimage"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintDimensionRatio="1.0"
+            app:layout_constraintStart_toEndOf="@+id/m365Image" />
+
+        <ImageView
+            android:id="@+id/BatteryImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/batteryimage"
+            app:layout_constraintDimensionRatio="1.5"
+            app:layout_constraintEnd_toEndOf="@+id/NearbyImage"
+            app:layout_constraintStart_toStartOf="@+id/NearbyImage"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+        <TextView
+            android:id="@+id/BatteryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="0%"
+            android:textColor="#191919"
+            app:layout_constraintBottom_toBottomOf="@+id/BatteryImage"
+            app:layout_constraintStart_toEndOf="@+id/BatteryImage"
+            app:layout_constraintTop_toTopOf="@+id/BatteryImage" />
+
+        <TextView
+            android:id="@+id/NearbyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="0.0 Km"
+            android:textColor="#191919"
+            app:layout_constraintBottom_toBottomOf="@+id/NearbyImage"
+            app:layout_constraintStart_toEndOf="@+id/NearbyImage"
+            app:layout_constraintTop_toTopOf="@+id/NearbyImage" />
+
+        <TextView
+            android:id="@+id/TimerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="0:00"
+            android:textColor="#191919"
+            app:layout_constraintBottom_toBottomOf="@+id/ClockImage"
+            app:layout_constraintStart_toEndOf="@+id/ClockImage"
+            app:layout_constraintTop_toTopOf="@+id/ClockImage" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="0dp"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="0dp"
+            android:layout_height="337dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="0dp"
+            app:layout_constraintGuide_percent="0.9" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
